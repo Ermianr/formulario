@@ -1,0 +1,118 @@
+html {
+    box-sizing: border-box;
+}
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+@font-face {
+    font-family: "Norse Bold";
+    src: url(/assets/font/Norse-Bold.otf);
+}
+body {
+    font-family: "Arial", serif;
+    font-size: 62.5%;
+    background: #F9FAFB;
+}
+main {
+    display: flex;
+   
+}
+input {
+    border: 1.5px solid #d4d6da;
+    border-radius: 5px;
+    height: 2rem;
+    outline: none;
+}
+input:focus {
+    border: 1.5px solid #2151D8;
+    transition: .5s ease all;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+/* Hero */
+.hero {
+    height: 100vh;
+    flex: 2;
+    background-image: url(/assets/img/background.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero > div {
+    background: rgba(0, 0, 0, 0.5);
+    margin: 10rem 0;
+    height: 9rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: "Norse Bold";
+    color: #fff;
+    font-size: 2.5rem;
+    align-items: center;
+    
+}
+.hero > div > img {
+    width: 6rem;
+}
+/* Form */
+.form-section {
+    flex: 4;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.text-section {
+    max-width: 34rem;
+    text-justify: initial;
+    margin: 4rem 0 0 2rem;
+}
+.form {
+    margin: 4rem 0 0 0;
+}
+.form > p {
+    color: #1F2937;
+    margin-left: 2rem;
+}
+.form-box {
+    display: flex;
+}
+.form-box > div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+}
+.form-box > div > label {
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 0.7rem;
+    color: #1F2937;
+    margin-bottom: 0.2rem;
+}
+.form-box > div > input {
+    margin-bottom: 1rem;
+}
+.form-container {
+    padding-left: 2rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding-bottom: 1rem;
+}
+.submit-section {
+    margin:3rem 0 0 2rem;
+}
+.submit-section > button {
+    background: #596D48;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    height: 3rem;
+    width: 12rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.submit-section > button:hover {
+    transition: .5s ease all;
+    filter: contrast(1.75);
+}
+.submit-section > p {
+    font-weight: 400;
+}
+.submit-section > p > span {
+    color: #596D48;
+    font-weight: bold;
+}
